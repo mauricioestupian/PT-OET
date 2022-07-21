@@ -15,11 +15,10 @@ return new class extends Migration
     {
         Schema::create('autos', function (Blueprint $table) {
             $table->engine = 'InnoDB';
+            $table->id();
             $table->string('placa', 6);
             $table->string('color');
             $table->string('tp_auto');
-
-            $table->primary('placa');
         });
     }
 

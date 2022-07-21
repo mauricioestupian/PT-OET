@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::table('autos', function (Blueprint $table) {
             $table->bigInteger('id_marca')->unsigned();
             $table->foreign('id_marca')->references('id')->on('marcas');
-            $table->bigInteger('id_con');
-            $table->foreign('id_con')->references('documento')->on('personas');
+            $table->bigInteger('id_con')->unsigned();
+            $table->foreign('id_con')->references('id')->on('personas');
             $table->bigInteger('id_prop')->unsigned();
-            $table->foreign('id_prop')->references('id')->on('roles');
+            $table->foreign('id_prop')->references('id')->on('personas');
         });
     }
 

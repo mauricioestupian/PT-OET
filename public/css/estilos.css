@@ -19,24 +19,16 @@ body {
 }
 #div_cont1 {
     border-radius: 20px;
-    width: 40%;
     background-color: rgb(38, 25, 30, 0.5);
     color: antiquewhite;
-    padding: 2em;
 }
 #div_cont2 {
-    width: 50%;
     border-radius: 20px;
     background-color: rgb(38, 25, 30, 0.5);
     color: antiquewhite;
-    padding: 2em;
 }
 
-main {
-    width: 90%;
-    margin: auto;
-    padding: 40px;
-}
+
 
 .formulario__label {
     display: block;

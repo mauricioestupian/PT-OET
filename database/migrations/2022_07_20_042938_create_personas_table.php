@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('personas', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
+            $table->id();
             $table->bigInteger('documento');
             $table->string('nom1', 15);
             $table->string('nom2', 15);
@@ -22,8 +22,6 @@ return new class extends Migration
             $table->string('dir', 40);
             $table->string('tel', 15);
             $table->string('ciudad', 30);
-
-            $table->primary('documento');
         });
     }
 
